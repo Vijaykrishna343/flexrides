@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexRides Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Login/Register Section -->
+  <div id="login-register-section">
+    <h2>Login or Register</h2>
+    <label for="email-phone">Email/Phone:</label>
+    <input type="text" id="email-phone" placeholder="Enter your email or phone number">
+
+    <label for="password">Password/OTP:</label>
+    <input type="password" id="password" placeholder="Enter your password or OTP">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age">
+
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <button class="btn-blue" id="login-register-btn">Login/Register</button>
+  </div>
+
+  <!-- Welcome Section -->
+  <div id="welcome-section" style="display: none;">
+    <h1>Welcome to FlexRides</h1>
+    <p>Your convenient and reliable ride booking service. Choose your ride, confirm your booking, and enjoy your journey.</p>
+    <button class="btn-blue" id="start-booking-btn">Start Booking</button>
+  </div>
+
+  <!-- Main Booking Section -->
+  <div class="container" id="booking-section">
+    <h2>FlexRides Booking</h2>
+
+    <div id="booking-type-options">
+      <label for="booking-type">Select Booking Type:</label>
+      <select id="booking-type" name="booking-type">
+        <option value="" disabled selected>Select a Booking Type</option>
+        <option value="ride">Book a Ride</option>
+        <option value="pooling">Book Pooling</option>
+      </select>
+    </div>
+
+    <div id="vehicle-type-options" style="display: none;">
+      <label for="vehicle-type">Select Vehicle Type:</label>
+      <select id="vehicle-type" name="vehicle-type">
+        <option value="" disabled selected>Select a Vehicle</option>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="auto">Auto</option>
+      </select>
+    </div>
+
+    <div id="pickup-drop-options" style="display: none;">
+      <label for="pickup-point">Enter Pickup Point:</label>
+      <input type="text" id="pickup-point" placeholder="Enter Pickup Point">
+
+      <label for="drop-point">Enter Drop Point:</label>
+      <input type="text" id="drop-point" placeholder="Enter Drop Point">
+    </div>
+
+    <div id="confirmation-options" style="display: true;">
+      <button class="btn-green" id="confirm-booking-btn">Confirm Booking</button>
+    </div>
+
+    <div id="tracking-container" class="tracking-container">
+      <h3>Live Tracking</h3>
+      <p id="tracking-status">Vehicle is on the way...</p>
+      <div class="tracking-info">
+        <p>Current Location: <span id="tracking-location">Not Available</span></p>
+        <p>ETA: <span id="tracking-eta">00:00</span></p>
+      </div>
+    </div>
+
+    <div id="rider-details" class="rider-details">
+      <h3>Rider Details</h3>
+      <p id="rider-name">Name: John Doe</p>
+      <p id="rider-phone">Phone: 123-456-7890</p>
+      <p id="rider-vehicle">Vehicle: Car</p>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3 id="popup-message">Booking Status</h3>
+      <button id="close-popup-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Live Tracking Section -->
+  <div id="tracking-container" class="tracking-container">
+    <h3>Live Tracking</h3>
+    <p id="tracking-status">Vehicle is on the way...</p>
+    <div class="tracking-info">
+      <p>Current Location: <span id="tracking-location">Not Available</span></p>
+      <p>ETA: <span id="tracking-eta">00:00</span></p>
+    </div>
+  </div>
+
+  <!-- Rider Details Section -->
+  <div id="rider-details" class="rider-details">
+    <h3>Rider Details</h3>
+    <p id="rider-name">Name: John Doe</p>
+    <p id="rider-phone">Phone: 123-456-7890</p>
+    <p id="rider-vehicle">Vehicle: Car</p>
+  </div>
+</div>
+
+<!-- Popup for Booking Status -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3 id="popup-message">Booking Status</h3>
+    <button id="close-popup-btn">Close</button>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  h2, h1 {
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .btn-green { background-color: #4CAF50; }
+  .btn-blue { background-color: #2196F3; }
+  .btn-orange { background-color: #ff9800; }
+  .btn-red { background-color: #f44336; }
+  .status {
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+  }
+  .popup-content button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .tracking-container, .rider-details {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #booking-section {
+    display: none;
+  }
+  
